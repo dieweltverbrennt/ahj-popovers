@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #292929;
+}
+
+button {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: calc(50vh - 90px);
+    background-color: red;
+    width: 400px;
+    height: 90px;
+    font-size: 35px;
+    color: white;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(201, 51, 51);
+}
+
+button:active {
+    background-color: rgb(201, 51, 51);
+}
+
+.hidden {
+    display: none;
+}
+
+.popover {
+    position: absolute;
+    color: black;
+    background-color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.popover-title {
+    background-color: #c5c5c5;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.popover-text {
+    padding: 20px 30px;
+    font-size: 20px;
+    text-align: center;
+}
