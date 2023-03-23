@@ -7,7 +7,6 @@ export default class Widget {
 
   init() {
     this.drawButton();
-    this.drawPopover();
     this.button.addEventListener('click', this.onClick.bind(this));
   }
 
@@ -27,16 +26,18 @@ export default class Widget {
 
     this.popover.style.top = `${this.button.offsetTop - this.popover.offsetHeight - 10}px`;
     this.popover.style.left = `${this.button.offsetLeft + ((this.button.offsetWidth - this.popover.offsetWidth) / 2)}px`;
-
-    this.popover.classList.add('hidden');
   }
 
-  togglePopover() {
-    this.popover.classList.toggle('hidden');
+  removePopover() {
+    this.popover.remove();
   }
 
   onClick(e) {
     e.preventDefault();
-    this.togglePopover();
+    if (document.querySelector('.popover')) {
+      this.removePopover();
+    } else {
+      this.drawPopover();
+    }
   }
 }

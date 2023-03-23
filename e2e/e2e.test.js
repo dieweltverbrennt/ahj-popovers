@@ -41,7 +41,6 @@ describe('Credit Card Validator form', () => {
   test('should show message after click', async () => {
     await page.goto(baseUrl);
     const button = await page.$('button');
-    await page.waitForSelector('.hidden');
     button.click();
     await page.waitForSelector('.popover');
   });
