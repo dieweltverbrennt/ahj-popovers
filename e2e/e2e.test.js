@@ -34,7 +34,7 @@ describe('Popover Toggle Button', () => {
     server.kill();
   });
 
-  test('should open correct', async () => {
+  test('should open correctly', async () => {
     await page.goto(baseUrl);
   });
 
