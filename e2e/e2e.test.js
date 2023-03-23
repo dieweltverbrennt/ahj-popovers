@@ -4,7 +4,7 @@ import { fork } from 'child_process';
 
 jest.setTimeout(30000); // default puppeteer timeout
 
-describe('Credit Card Validator form', () => {
+describe('Popover Toggle Button', () => {
   let browser = null;
   let page = null;
   let server = null;
@@ -34,7 +34,7 @@ describe('Credit Card Validator form', () => {
     server.kill();
   });
 
-  test('should open correct form', async () => {
+  test('should open correct', async () => {
     await page.goto(baseUrl);
   });
 
