@@ -15,7 +15,7 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist",
-    "e2e": "jest --testPathPattern=./e2e/"
+    "e2e": "jest --testPathPattern=./e2e/ --detectOpenHandles"
   },
   "repository": "git@github.com:dieweltverbrennt/ahj-popovers.git",
   "author": "Maria <nikmaria15@gmail.com>",
